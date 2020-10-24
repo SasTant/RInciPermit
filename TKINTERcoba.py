@@ -1,4 +1,4 @@
-# coba git
+# coba git juga ke github
 import Rinci_Permit as RP
 import tkinter as teka
 
