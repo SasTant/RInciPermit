@@ -1,4 +1,3 @@
-# coba git juga ke github
 import Rinci_Permit as RP
 import tkinter as teka
 
@@ -23,7 +22,7 @@ def sal_in(): #salah input
 def tan_exp(): #tangkap expiry
     e.delete(0, teka.END)
     angka = angk.get()
-    if angka.isnumeric(): # == True:
+    if angka.isnumeric(): 
         angka_i = int(angka)
         if angka_i < len(RP.hitung_exp()) and angka_i > -1:
             sem = RP.hitung_sel_exp(angka_i)
