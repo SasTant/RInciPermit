@@ -1,3 +1,4 @@
+# coba git
 import Rinci_Permit as RP
 import tkinter as teka
 
