@@ -2,6 +2,8 @@ import Rinci_Permit as RP
 import tkinter as teka
 
 cen_ut = teka.Tk() #cendela utama
+cen_ut.title("Rinci permit ECDIS")
+
 
 def pencet_hs():
     e.delete(0, teka.END)
@@ -14,6 +16,8 @@ def pencet_hs():
 def kosong():
     e.delete( 0,'end')
 
+def kelprog():
+    quit()
 
 def sal_in(): #salah input
     e.insert(0, 'Masukan salah,Ulangi dengan nilai Indeks yang sesuai! ')
@@ -44,7 +48,7 @@ angk.pack()
 angk.insert(0,"0")
 
 
-label = teka.Label(cen_ut, text="TES \n Progran Rinci Permit")
+label = teka.Label(cen_ut, text="Masukkan Indeks Expiry mulai dari 0,1,2,...")
 label.pack()
 
 # label2 = teka.Label(cen_ut, text=str(RP.hitung_exp()) + "\n Indeks expiry mulai dr [0, 1, 2, ...dst]")
@@ -54,10 +58,12 @@ label2.pack()
 tombol= teka.Button(cen_ut, text="Rinci kode sel & Jumlah", command = pencet_hs, fg="green")
 tombol.pack()
 
-tombol2 = teka.Button(cen_ut,text="Masukkan Indeks Expiry", command = tan_exp )
+tombol2 = teka.Button(cen_ut,text="Rinci Expiry dari Indeks", command = tan_exp )
 tombol2.pack()
 
 tombol3 = teka.Button(cen_ut,text="Kosongkan Display", command = kosong )
 tombol3.pack()
+
+tombol_keluar = teka.Button(cen_ut, text="Keluar Program", command=kelprog ).pack()
 
 cen_ut.mainloop()
