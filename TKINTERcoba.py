@@ -1,6 +1,7 @@
 import Rinci_Permit as RP
 import tkinter as teka
 
+
 cen_ut = teka.Tk() #cendela utama
 cen_ut.title("Rinci permit ECDIS")
 
@@ -17,7 +18,7 @@ def kosong():
     e.delete( 0,'end')
 
 def kelprog():
-    quit()
+    cen_ut.destroy()
 
 def sal_in(): #salah input
     e.insert(0, 'Masukan salah,Ulangi dengan nilai Indeks yang sesuai! ')
